@@ -149,8 +149,7 @@ def start_ping(update, context):
         ping_response = 0
 
     if ping_response != 0:
-        update.message.reply_text(f"{ping_response}")
-        parse_ping_response(ping_response, log_filename)
+        update.message.reply_text(f"{parse_ping_response(ping_response, log_filename)}")
 
 
 def help(update, context):
@@ -221,7 +220,7 @@ def parse_ping_response(ping_response, log_filename: str):
     print(treated_ping_response)
 
     print(treated_ping_response[0])
-
+    return treated_ping_response[0]
 
 def main():
     print("Function | main\n")
