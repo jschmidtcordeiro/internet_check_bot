@@ -1,3 +1,4 @@
+# https://github.com/J-Cordeiro/internet_check_bot
 # pip install python-telegram-bot
 import json
 import subprocess
